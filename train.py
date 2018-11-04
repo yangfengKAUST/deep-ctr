@@ -9,7 +9,7 @@ tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device 
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
 tf.flags.DEFINE_integer("num_checkpoints", 5, "number of checkpoints to store")
 tf.flags.DEFINE_integer("batch_size", 200, "Number of training batch size")
-tf.flags.DEFINE_flag("dev_sample_percentage", .1, "percentage of the training size")
+tf.flags.DEFINE_float("dev_sample_percentage", .1, "percentage of the training size")
 
 FLAGS = tf.flags.FLAGS
 
